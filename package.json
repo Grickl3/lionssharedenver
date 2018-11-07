@@ -1,0 +1,29 @@
+{
+  "name": "lionssharedenver",
+  "version": "1.0.0",
+  "description": "Men's Lifestyle Store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grickl3/lionssharedenver.git"
+  },
+  "keywords": [
+    "mens",
+    "fashion",
+    "retail",
+    "designer",
+    "wear",
+    "denver",
+    "rino",
+    "gentlemens"
+  ],
+  "author": "SQGLZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grickl3/lionssharedenver/issues"
+  },
+  "homepage": "https://github.com/Grickl3/lionssharedenver#readme"
+}
