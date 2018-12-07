@@ -25,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/Grickl3/lionssharedenver/issues"
   },
-  "homepage": "https://github.com/Grickl3/lionssharedenver#readme"
+  "homepage": "https://github.com/Grickl3/lionssharedenver#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-watch": "^5.0.1"
+  }
 }
