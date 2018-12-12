@@ -11,7 +11,8 @@
 
 .nav__top-bar {
 	display: flex;
-	width: 100vw;
+	width: 110vw;
+	z-index: 2;
 }
 
 .nav__top-bar__section {
@@ -45,16 +46,21 @@
 }
 
 .nav__lower-bar {
+	position: absolute;
+	top: 4.5rem;
+	width: 100%;
 	background-color: lightslategrey;
+	z-index: 1;
 }
 
 .nav__link-list {
-	margin: 15px 50px 15px 0;
+	/*margin: 15px 150px 15px 0;*/
+	margin-right: 15%;
 }
 
 .nav__link {
 	float: right;
-	margin: 0 12px;
+	margin: 0 18px;
 }
 
 .nav__link:hover {
