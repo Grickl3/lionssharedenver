@@ -1,0 +1,9 @@
+
+.splash__video {
+	position: absolute;
+	top: 0;
+	z-index: -5;
+
+	height: 100vh;
+	/*border: 1px solid red;*/
+}

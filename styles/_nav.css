@@ -1,0 +1,62 @@
+
+
+
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+}
+
+.nav__top-bar {
+	display: flex;
+	width: 100vw;
+}
+
+.nav__top-bar__section {
+	flex-grow: 1;
+	height: 3.75rem;
+	padding: 1rem 0 .0125rem 0;
+
+	background-color: white;
+}
+
+.nav__title {
+	margin: .5rem 3rem;
+
+	font-size: 1.75rem;
+}
+
+.nav__title__left {
+	text-align: right;
+}
+
+.nav__title__right {
+	text-align: left;
+}
+
+.nav__title__icon-box {
+
+}
+
+.nav__title__img-banner {
+	width: 100px;
+}
+
+.nav__lower-bar {
+	background-color: lightslategrey;
+}
+
+.nav__link-list {
+	margin: 15px 50px 15px 0;
+}
+
+.nav__link {
+	float: right;
+	margin: 0 12px;
+}
+
+.nav__link:hover {
+
+}
