@@ -49,7 +49,7 @@
 	position: absolute;
 	top: 4.5rem;
 	width: 100%;
-	background-color: lightslategrey;
+	/*background-color: lightslategrey;*/
 	z-index: 1;
 }
 
@@ -61,6 +61,7 @@
 .nav__link {
 	float: right;
 	margin: 0 18px;
+	color: white;
 }
 
 .nav__link:hover {
