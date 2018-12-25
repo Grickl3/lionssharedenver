@@ -1,0 +1,11 @@
+
+
+.delivery__modal {
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 600px;
+	width: 450px;
+	background-color: white;
+}
