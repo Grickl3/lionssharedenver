@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/_splash.css">
 	<link rel="stylesheet" type="text/css" href="styles/_nav.css">
 	<link rel="stylesheet" type="text/css" href="styles/_delivery.css">
+	<link rel="stylesheet" type="text/css" href="styles/_footer.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
 
@@ -47,8 +48,8 @@
 	<div class="splash">
 		<div class="splash__mute-button">
 			<img class="splash__mute-icon">
-			<img class="splash__video" src="img/giphy.gif" nopin="nopin">
-		</div><!-- MUTE BUTTON -->
+			<img id="splash" class="splash__video" src="img/giphy.gif" nopin="nopin">
+		</div><!-- MUTE BUTTON --> 
 	</div><!-- SPLASH -->
 
 	<div id="delivery-modal" class="delivery__modal delivery__hidden">
@@ -65,21 +66,37 @@
 	</div><!-- DELIVERY MODAL -->
 
 	<div class="tiles">
-
+		<div class="tile">
+			<div class="tile__upper-corner">    
+			</div><!-- UPPER CORNER -->
+		</div><!-- TILE -->
 
 	</div><!-- TILES -->
 
+	<footer class="footer">
+		
+	</footer>
+
 	<script type="text/javascript">
+		var splash = document.getElementById("splash");
+		var yOffset = 0;
+
 		var deliveryModal = document.getElementById("delivery-modal");
 		var deliveryOpen = document.getElementById("delivery-open");
 		var deliveryClose = document.getElementById("delivery-close");
 
+		window.addEventListener("scroll", function() {
+			toggleSplash();
+		})
+
 		deliveryOpen.addEventListener("click", function() {
-			toggleModal()
+			toggleModal();
 		});
 		deliveryClose.addEventListener("click", function() {
-			toggleModal()
+			toggleModal(); 
 		});
+
+
 
 	</script>
 

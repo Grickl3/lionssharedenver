@@ -1,0 +1,16 @@
+
+
+
+
+.tiles {
+	margin-top: 110vh;
+	margin-left: 85px;
+	margin-right: 85px;
+}
+
+.tile {
+	width: 450px;
+	min-height: 300px;
+	background-color: pink;
+}
+	
