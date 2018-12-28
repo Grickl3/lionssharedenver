@@ -4,13 +4,69 @@
 
 .tiles {
 	margin-top: 110vh;
-	margin-left: 85px;
-	margin-right: 85px;
+	margin-left: 80px;
+	margin-right: 80px;
+
+	display: flex;
 }
 
 .tile {
-	width: 450px;
-	min-height: 300px;
+	position: relative;
+	width: 300px;
+	min-height: 75px;
+	margin: 5px;
+
+	overflow: hidden;
+
+	border-radius: 5px;
 	background-color: pink;
 }
+
+.tile__background {
+	max-width: 100%;
+}
+
+.tile__upper-corner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	min-height: 20px;
+	padding: 15px 2px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-bottom-right-radius: 11px;
+	background-color: white;
+}
+
+.tile__bottom {}
+
+.tile__stripe {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+
+	padding: 8px 0 0 0;
+
+	text-align: center;
+	background-color: rgba(0,0,0,.6);
+}
+
+.tile__upper-corner__copy {}
+
+.tile__upper-corner__glyph {
+	max-width: 60px;
+}
+
+.tile__stripe__copy {
+	color: white;
+}
+
+
+
+
 	
