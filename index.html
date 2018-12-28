@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/_delivery.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
+
+	<script type="text/javascript" src="scripts/ui.js"></script>
 </head>
 <body>  
 
@@ -35,7 +37,7 @@
 				<li class="nav__link">Reviews</li> 
 			</ul>
 		</div><!-- LOWER BAR -->
-		<div class="nav__delivery-box">
+		<div id="delivery-open" class="nav__delivery-box">
 			<img class="nav__delivery-lion" src="img/delivery-lion.png" alt="delivery lion">    
 		</div><!-- DELIVERY BOX -->
 		<div class="nav__instabox">
@@ -50,17 +52,37 @@
 		</div><!-- MUTE BUTTON -->
 	</div><!-- SPLASH -->
 
-	<div class="delivery__modal">
-		<div class="delivery__close">
+	<div id="delivery-modal" class="delivery__modal delivery__hidden">
+		<div id="delivery-close" class="delivery__close"> 
 			<div class="delivery__close__x-arm delivery__close__x-arm-up"></div>
-			<div class="delivery__close__x-arm delivery__close__x-arm-down"></div>  
+			<div class="delivery__close__x-arm delivery__close__x-arm-down"></div>
 		</div><!-- CLOSE X -->
+		<h1 class="delivery__heading delivery__copy">Delivery</h1>
+		<p class="delivery__explanation delivery__copy">Lion's Share will happily have the contents of<br>your shopping cart delivered to you today.</p> 
+		
+		<div class="delivery__order-button">
+			<span class="delivery__order-button__copy delivery__copy">SEND</span>    
+		</div><!-- ORDER BUTTON -->
 	</div><!-- DELIVERY MODAL -->
 
 	<div class="tiles">
 
 
 	</div><!-- TILES -->
+
+	<script type="text/javascript">
+		var deliveryModal = document.getElementById("delivery-modal");
+		var deliveryOpen = document.getElementById("delivery-open");
+		var deliveryClose = document.getElementById("delivery-close");
+
+		deliveryOpen.addEventListener("click", function() {
+			toggleModal()
+		});
+		deliveryClose.addEventListener("click", function() {
+			toggleModal()
+		});
+
+	</script>
 
 </body>
 </html>

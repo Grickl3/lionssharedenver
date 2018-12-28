@@ -7,5 +7,70 @@
 	transform: translateX(-50%);
 	height: 600px;
 	width: 450px;
+
+	border-radius: 13px;
 	background-color: white;
 }
+
+.delivery__hidden {
+	display: none;
+}
+
+.delivery__close__x-arm {
+	margin: 12px 18px;
+	position: absolute;
+	right: 0px;
+
+	height: 20px;
+	width: 4px;
+	background-color: darkgrey;
+}
+
+.delivery__close:hover .delivery__close__x-arm {
+	background-color: black;
+}
+
+
+.delivery__close__x-arm-up {
+	transform: rotate(45deg);
+}
+.delivery__close__x-arm-down {
+	transform: rotate(-45deg);
+}
+
+.delivery__copy {
+	text-align: center;
+}
+
+.delivery__heading {}
+
+.delivery__explanation {}
+
+.delivery__order-button {
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 300px;
+	height: 60px;
+
+	border-radius: 13px;
+	background-color: lightgreen;
+}
+
+.delivery__order-button:hover {
+	background-color: green;
+}
+
+.delivery__order-button__copy {
+	display: block;
+	margin-top: 20px;
+
+	color: white;
+}
+
+
+
+
+
+
