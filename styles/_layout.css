@@ -1,7 +1,9 @@
-* {
-	overflow-x: hidden;
-}
+
+
+
+
 
 body {
 	margin: -5px;
+	overflow-x: hidden;
 }

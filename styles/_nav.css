@@ -11,34 +11,45 @@
 
 .nav__top-bar {
 	display: flex;
-	width: 110vw;
+	justify-content: center;
+	width: 100vw;
 	z-index: 2;
-}
-
-.nav__top-bar__section {
-	flex-grow: 1;
-	height: 3.75rem;
-	padding: 1rem 0 .0125rem 0;
 
 	background-color: white;
 }
 
-.nav__title {
-	margin: .5rem 3rem;
+.nav__top-bar__header {
+	/*flex-grow: 1;*/
+	height: 3.75rem;
+	padding: 1rem 0 .0125rem 0;
 
+}
+
+.nav__title {
 	font-size: 1.75rem;
 }
 
 .nav__title__left {
+	max-width: 90%;
 	text-align: right;
 }
 
 .nav__title__right {
+	max-width: 90%;
 	text-align: left;
 }
 
-.nav__title__icon-box {
+.nav__title__space {
+	display: inline;
+	margin: 0 100px;
+	height: 5px;
+	width: 5px;
+}
 
+.nav__title__icon-box {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .nav__title__img-banner {
@@ -54,7 +65,7 @@
 }
 
 .nav__link-list {
-	/*margin: 15px 150px 15px 0;*/
+	list-style: none;
 	margin-right: 15%;
 }
 
