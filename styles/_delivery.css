@@ -2,11 +2,12 @@
 
 .delivery__modal {
 	position: fixed;
-	top: 20%;
+	top: 15%;
 	left: 50%;
 	transform: translateX(-50%);
 	height: 600px;
 	width: 450px;
+	z-index: 100;
 
 	border-radius: 13px;
 	background-color: white;
