@@ -1,7 +1,8 @@
 
 
 
-var Tile = function(height,imageSrc,imageAltAttr,tileType,productPrice,verdictImgSrc,verdictImgAlt,month,date,time) {
+var Tile = function(height,imageSrc,imageAltAttr,tileType,productPrice,verdictImgSrc,verdictImgAlt,month,date,time,listingCaption) {
+
 	this.imageSrc = imageSrc;
 	this.imageAltAttr = imageAltAttr;
 	this.tileType = tileType;
@@ -11,14 +12,14 @@ var Tile = function(height,imageSrc,imageAltAttr,tileType,productPrice,verdictIm
 	this.date = date;
 	this.time = time;
 	this.productPrice = productPrice;
-	// this.listingCaption = listingCaption;
-	// this.linkDest = linkDest;
+	this.listingCaption = listingCaption;
 	this.height = height;
 };
 
 Tile.prototype.layTile = function() {
 	var tile = document.createElement('div');
 	tile.classList.add('tile');
+	tile.setAttribute('id', this.listingCaption);
 	tile.style.height = this.height + "px";
 
 	var img = document.createElement('img');
@@ -52,17 +53,32 @@ Tile.prototype.layTile = function() {
 		time.classList.add("tile__upper-corner__time");
 
 		corner.appendChild(date);
-		// var breakOne = document.createElement('br');
-		// corner.appendChild(breakOne);
 		corner.appendChild(month);
-		// var breakTwo = document.createElement('br');
-		// corner.appendChild(breakTwo);
 		corner.appendChild(time);
 	} else {
 		console.log("invalid tile type");
 	}
 
+	var stripe = document.createElement('div');
+	stripe.classList.add('tile__stripe');
+	var stripeCaption = document.createElement('span');
+	stripeCaption.classList.add('tile__stripe__copy');
+	stripeCaption.textContent = this.listingCaption;
+	stripe.appendChild(stripeCaption);
+
+
 	tileBox.appendChild(tile);
 	tile.appendChild(img);
 	tile.appendChild(corner);
+	tile.appendChild(stripe);
+
 };
+
+var savage21 = new Tile(225,"../img/21-savage.jpg","21 Savage","review",null,"../img/thumbsup.png","thumbs up",null,null,null,"21 Savage: New Release");
+savage21.layTile();
+
+
+
+
+
+

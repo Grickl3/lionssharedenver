@@ -43,6 +43,10 @@
 	background-color: white;
 }
 
+.tile__upper-corner__month {}
+.tile__upper-corner__date {}
+.tile__upper-corner__time {}
+
 .tile__bottom {}
 
 .tile__stripe {
