@@ -37,8 +37,7 @@
 	padding: 15px 2px;
 
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
 
 	border-bottom-right-radius: 11px;
 	background-color: white;

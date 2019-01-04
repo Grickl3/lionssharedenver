@@ -15,7 +15,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
 
 	<script type="text/javascript" src="scripts/ui.js"></script>
-	<script type="text/javascript" src="scripts/tile.js"></script>
+	<!-- <script type="text/javascript" src="scripts/tile.js"></script> -->
+	<script type="text/javascript" src="scripts/tiling.js"></script>
 </head>
 <body>  
 
@@ -132,24 +133,28 @@
 		var splash = document.getElementById("splash");
 		var yOffset = 0;
 
-		var deliveryModal = document.getElementById("delivery-modal");
-		var deliveryOpen = document.getElementById("delivery-open");
-		var deliveryClose = document.getElementById("delivery-close");
+		// ================= SPLASH ========================
 
-		var tileBox = document.getElementById("tile-box");
+			var deliveryModal = document.getElementById("delivery-modal");
+			var deliveryOpen = document.getElementById("delivery-open");
+			var deliveryClose = document.getElementById("delivery-close");
 
-		window.addEventListener("scroll", function() {
-			toggleSplash();
-		})
+			window.addEventListener("scroll", function() {
+				toggleSplash();
+			})
 
-		deliveryOpen.addEventListener("click", function() {
-			toggleModal();
-		});
-		deliveryClose.addEventListener("click", function() {
-			toggleModal(); 
-		});
+			deliveryOpen.addEventListener("click", function() {
+				toggleModal();
+			});
+			deliveryClose.addEventListener("click", function() {
+				toggleModal(); 
+			});
 
-		layTiles();
+		// ================= TILES ========================
+
+			var tileBox = document.getElementById("tile-box");    
+
+		// ================= TILES ========================
 	</script>
 
 </body>
