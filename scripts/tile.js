@@ -29,46 +29,46 @@
 			// 	</div><!-- STRIPE -->  
 			// </div><!-- TILE -->
 
-	var tileSet = [
-		{
-			listingTitle: "21 Savage review", // Internal purposes only
-			imageSrc: "../img/21-savage.jpg",
-			imageAltAttr: "21 Savage",
-			imageHeight: "",
-			tileType: "product", // review, product, event
-			reviewVerdict: "", //up, down, fire, shit, weird
-			eventDate: {"month": "", "date": "", "time": ""},
-			productPrice: "12",
-			listingCaption: "",
-			linkDest: ""
-			},
-			{
-			listingTitle: "Long Shirt", // Internal purposes only
-			imageSrc: "../img/b-n-w.jpg",
-			imageAltAttr: "black and white outfit",
-			imageHeight: "",
-			tileType: "product", // review, product, event
-			reviewVerdict: "", //up, down, fire, shit, weird
-			eventDate: {"month": "", "date": "", "time": ""},
-			productPrice: "$75",
-			listingCaption: "Extra Long T-Shirt",
-			linkDest: ""
-			},
-			{
-			listingTitle: "Tokyo Punk Look", // Internal purposes only
-			imageSrc: "../img/box-print.jpg",
-			imageAltAttr: "box-print",
-			imageHeight: "",
-			tileType: "product", // review, product, event
-			reviewVerdict: "", //up, down, fire, shit, weird
-			eventDate: {"month": "", "date": "", "time": ""},
-			productPrice: "$800",
-			listingCaption: "Tokyo Punk Look",
-			linkDest: ""
-			}
-	];
+	// var tileSet = [
+	// 		{
+		// 		listingTitle: "21 Savage review", // Internal purposes only
+		// 		imageSrc: "../img/21-savage.jpg",
+		// 		imageAltAttr: "21 Savage",
+		// 		imageHeight: "",
+		// 		tileType: "product", // review, product, event
+		// 		reviewVerdict: "", //up, down, fire, shit, weird
+		// 		eventDate: {"month": "", "date": "", "time": ""},
+		// 		productPrice: "12",
+		// 		listingCaption: "",
+		// 		linkDest: ""
+		// 		},
+		// 		{
+		// 		listingTitle: "Long Shirt", // Internal purposes only
+		// 		imageSrc: "../img/b-n-w.jpg",
+		// 		imageAltAttr: "black and white outfit",
+		// 		imageHeight: "",
+		// 		tileType: "product", // review, product, event
+		// 		reviewVerdict: "", //up, down, fire, shit, weird
+		// 		eventDate: {"month": "", "date": "", "time": ""},
+		// 		productPrice: "$75",
+		// 		listingCaption: "Extra Long T-Shirt",
+		// 		linkDest: ""
+		// 		},
+		// 		{
+		// 		listingTitle: "Tokyo Punk Look", // Internal purposes only
+		// 		imageSrc: "../img/box-print.jpg",
+		// 		imageAltAttr: "box-print",
+		// 		imageHeight: "",
+		// 		tileType: "product", // review, product, event
+		// 		reviewVerdict: "", //up, down, fire, shit, weird
+		// 		eventDate: {"month": "", "date": "", "time": ""},
+		// 		productPrice: "$800",
+		// 		listingCaption: "Tokyo Punk Look",
+		// 		linkDest: ""
+	// 		}
+	// ];
 
-	var tileContent = "";
+	// var tileContent = "";
 
 	function layTiles() {
 		

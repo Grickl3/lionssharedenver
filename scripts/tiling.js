@@ -74,8 +74,7 @@ Tile.prototype.layTile = function() {
 
 };
 
-var savage21 = new Tile(225,"../img/21-savage.jpg","21 Savage","review",null,"../img/thumbsup.png","thumbs up",null,null,null,"21 Savage: New Release");
-savage21.layTile();
+
 
 
 
