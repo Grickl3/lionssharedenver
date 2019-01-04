@@ -66,7 +66,7 @@
 		</div><!-- ORDER BUTTON -->
 	</div><!-- DELIVERY MODAL -->
 
-	<div class="tiles">
+	<div id="tile-box" class="tiles">
 		<div class="tile tile__review">
 			<img class="tile__background" src="img/21-savage.jpg" alt="21 Savage">
 			<div class="tile__upper-corner">  
@@ -93,7 +93,7 @@
 			<img class="tile__background" src="img/box-print.jpg" alt="Tokyo Punk">
 			<div class="tile__upper-corner">  
 				<span class="tile__upper-corner__copy">$800</span>  
-				<img class="tile__upper-corner__glyph" src="" alt=""> 
+				<img class="tile__upper-corner__glyph" src="" alt="">
 			</div><!-- UPPER CORNER -->  
 			<div class="tile__stripe"> 
 				<span class="tile__stripe__copy">Tokyo Punk Ensemble</span>
@@ -128,13 +128,15 @@
 		
 	</footer>
 
-	<script type="text/javascript">
+	<script type="text/javascript">     
 		var splash = document.getElementById("splash");
 		var yOffset = 0;
 
 		var deliveryModal = document.getElementById("delivery-modal");
 		var deliveryOpen = document.getElementById("delivery-open");
 		var deliveryClose = document.getElementById("delivery-close");
+
+		var tileBox = document.getElementById("tile-box");
 
 		window.addEventListener("scroll", function() {
 			toggleSplash();
@@ -147,8 +149,7 @@
 			toggleModal(); 
 		});
 
-
-
+		layTiles();
 	</script>
 
 </body>
