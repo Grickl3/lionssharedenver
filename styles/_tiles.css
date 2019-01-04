@@ -6,6 +6,7 @@
 	margin-top: 110vh;
 	margin-left: 80px;
 	margin-right: 80px;
+	z-index: 0;
 
 	display: flex;
 	flex-wrap: wrap;
