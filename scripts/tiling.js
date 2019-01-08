@@ -1,9 +1,10 @@
 
 
 
-var Tile = function(height,imageSrc,imageAltAttr,tileType,productPrice,verdictImgSrc,verdictImgAlt,month,date,time,listingCaption) {
+var Tile = function(height,imageSrc,imageSrcActive,imageAltAttr,tileType,productPrice,verdictImgSrc,verdictImgAlt,month,date,time,listingCaption) {
 
 	this.imageSrc = imageSrc;
+	this.imageSrcActive = imageSrcActive;
 	this.imageAltAttr = imageAltAttr;
 	this.tileType = tileType;
 	this.verdictImgSrc = verdictImgSrc;
@@ -14,7 +15,7 @@ var Tile = function(height,imageSrc,imageAltAttr,tileType,productPrice,verdictIm
 	this.productPrice = productPrice;
 	this.listingCaption = listingCaption;
 	this.height = height;
-};
+}; 
 
 Tile.prototype.layTile = function() {
 	var tile = document.createElement('div');
@@ -26,6 +27,11 @@ Tile.prototype.layTile = function() {
 	img.setAttribute('src', this.imageSrc);
 	img.classList.add('tile__background');
 	img.setAttribute('alt', this.imageAltAttr);
+
+	var imgActive = document.createElement('img');
+	imgActive.setAttribute('src', this.imageSrcActive);
+	imgActive.classList.add('tile__background-active');
+	imgActive.setAttribute('alt', this.imageAltAttr);
 	
 	var corner = document.createElement('div');
 	corner.classList.add('tile__upper-corner');
@@ -69,6 +75,7 @@ Tile.prototype.layTile = function() {
 
 	tileBox.appendChild(tile);
 	tile.appendChild(img);
+	tile.appendChild(imgActive);
 	tile.appendChild(corner);
 	tile.appendChild(stripe);
 

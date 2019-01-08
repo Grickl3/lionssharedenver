@@ -25,7 +25,27 @@
 }
 
 .tile__background {
+	position: absolute;
+	top: 0;
 	max-width: 100%;
+	transition: opacity .3s;
+}
+
+.tile__background:hover {
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.tile__background-active {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.tile__background-active:hover {
+	opacity: 1;
+	transition: opacity .3s;
 }
 
 .tile__upper-corner {
