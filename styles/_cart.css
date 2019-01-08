@@ -1,0 +1,9 @@
+
+
+
+.cart__box {
+	margin: 20px;
+	min-width: 60%;
+	min-height: 60%;
+	border: 2px solid grey;
+}
