@@ -45,6 +45,7 @@
 }
 
 .nav__title__space {
+	cursor: default;
 	display: inline;
 	margin: 0 100px;
 	height: 5px;
