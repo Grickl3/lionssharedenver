@@ -26,6 +26,10 @@
 }
 
 .nav__title {
+	font-family: 'IBM Plex Sans', Helvetica, Verdana, sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: .75rem;
 	font-size: 1.75rem;
 }
 
@@ -72,12 +76,22 @@
 
 .nav__link {
 	float: right;
-	margin: 0 18px;
+	margin: 0 12px;
+
+	font-family: 'IBM Plex Sans', Helvetica, Verdana, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .35rem;
+	font-size: .75rem;
 	color: white;
+
+	cursor: default;
+	transition: text-shadow .3s;
 }
 
 .nav__link:hover {
-
+	transition: text-shadow .3s;
+	text-shadow: 4px 4px #1f1270;
 }
 
 .nav__delivery-box {
