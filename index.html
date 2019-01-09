@@ -136,12 +136,12 @@
 
 	</div><!-- TILES -->
 
-	<div id="content-box" class="content__box content__hidden">    
-		<div id="inner-box" class="content__inner-box">
-			<div id="content-close" class="ui__close-cnt ">  
+	<div id="content-box" class="content__box content__hidden"> 
+		<div id="content-close" class="ui__close-cnt ">  
 				<div class="ui__close__x-arm-cnt ui__close__x-arm-up"></div>
 				<div class="ui__close__x-arm-cnt ui__close__x-arm-down"></div> 
-			</div><!-- CLOSE X -->
+			</div><!-- CLOSE X -->   
+		<div id="inner-box" class="content__inner-box">  
 		</div><!-- INNER BOX -->   
 	</div><!-- CONTENT -->
 
@@ -189,10 +189,9 @@
 			var mcPhoneHome = new Tile(323, "img/mc-phone-home_323.jpg", "img/mc-phone-home_active.jpg", "MC Phone Home", "event", null, null, null, "MAY", "15", "8pm", "MC Phone Home");
 			mcPhoneHome.layTile();
 
-		// ================= CONTENT ========================
+		// ================= CONTENT ========================  
 			var contentBox = document.getElementById("content-box");
-			var contentClose = document.getElementById("content-close");
-			 
+			var contentClose = document.getElementById("content-close"); 
 
 			contentClose.addEventListener("click", function() {
 				toggleContent(); 

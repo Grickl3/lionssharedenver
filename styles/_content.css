@@ -25,6 +25,11 @@
 	display: none;
 }
 
-#content-close {
-	/*border: 1px solid red;*/
+.content__heading {
+	margin: .5rem;
+
+	font-family: 'IBM Plex Sans', Helvetica, Verdana, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
 }
+

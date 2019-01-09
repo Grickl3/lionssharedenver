@@ -32,7 +32,7 @@ Tile.prototype.layTile = function() {
 	imgActive.setAttribute('src', this.imageSrcActive);
 	imgActive.classList.add('tile__background-active');
 	imgActive.setAttribute('alt', this.imageAltAttr);
-	
+
 	var corner = document.createElement('div');
 	corner.classList.add('tile__upper-corner');
 	
@@ -73,41 +73,40 @@ Tile.prototype.layTile = function() {
 	stripe.appendChild(stripeCaption);
 
 
+	// ========== CONTENT BOX ==================
+
+		var galImg = document.createElement('img');
+		galImg.setAttribute('src', this.imageSrc);
+
+		var itemHeading = document.createElement('h1');
+		itemHeading.classList.add('content__heading');
+		itemHeading.textContent = this.listingCaption;
+
+
+
 	tileBox.appendChild(tile);
 	tile.appendChild(img);
 	tile.appendChild(imgActive);
 	tile.appendChild(corner);
 	tile.appendChild(stripe);
 
-	var mainImage = document.createElement('img');
-	mainImage.setAttribute('src', this.imgActive);
-
-	innerBox.appendChild(mainImage);
+	// var mainImage = document.createElement('img');
+	// mainImage.setAttribute('src', this.imgSrcActive);
 
 	// tile.addEventListener("click", function() {
 	// 	loadContent(); 
 	// });
 
 	tile.addEventListener("click", function() {
+		innerBox.innerHTML = "",
+		innerBox.appendChild(galImg);
+		innerBox.appendChild(itemHeading);
 		toggleContent(); 
 	});
 };
 
 
-// Tile.prototype.loadContent = function() {
-// 	var mainImage = document.createElement('img');
-// 	mainImage.setAttribute('src', this.imgActive);
 
-// 	innerBox.appendChild(mainImage);
-
-// 	tile.addEventListener("click", function() {
-// 		loadContent(); 
-// 	});
-
-// 	tile.addEventListener("click", function() {
-// 		toggleContent(); 
-// 	});
-// };
 
 
 
