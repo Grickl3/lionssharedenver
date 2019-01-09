@@ -136,8 +136,8 @@
 
 	</div><!-- TILES -->
 
-	<div id="content-box" class="content__box">  <!-- content__hidden -->
-		<div class="content__inner-box">
+	<div id="content-box" class="content__box content__hidden">    
+		<div id="inner-box" class="content__inner-box">
 			<div id="content-close" class="ui__close-cnt ">  
 				<div class="ui__close__x-arm-cnt ui__close__x-arm-up"></div>
 				<div class="ui__close__x-arm-cnt ui__close__x-arm-down"></div> 
@@ -170,10 +170,12 @@
 			});
 		// ================= TILES ========================
 
-			var tileBox = document.getElementById("tile-box");  
+			var tileBox = document.getElementById("tile-box"); 
+			var innerBox = document.getElementById("inner-box");
 
 			var savage21 = new Tile(600,"img/21savage_600.jpg","img/21-savage_active.jpg","21 Savage","review",null,"../img/thumbsup.png","thumbs up",null,null,null,"21 Savage: New Release");
 			savage21.layTile(); 
+			// savage21.loadContent(); 
 
 			var meekMill = new Tile(750, "img/meek-mill_750.jpg", "img/meek-mill_active.jpg", "Meek Mill", "event", null, null, null, "JULY", "9", "6pm", "Meek Mill");
 			meekMill.layTile();
@@ -190,10 +192,11 @@
 		// ================= CONTENT ========================
 			var contentBox = document.getElementById("content-box");
 			var contentClose = document.getElementById("content-close");
+			 
 
 			contentClose.addEventListener("click", function() {
 				toggleContent(); 
-			}); 
+			});  
 		  
 			
 			

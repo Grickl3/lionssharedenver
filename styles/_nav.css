@@ -73,7 +73,8 @@
 
 .nav__link-list {
 	list-style: none;
-	margin-right: 15%;
+	margin-left: 50%;
+	margin-right: 40px;
 }
 
 .nav__link {

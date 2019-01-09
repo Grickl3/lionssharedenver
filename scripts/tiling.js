@@ -78,12 +78,36 @@ Tile.prototype.layTile = function() {
 	tile.appendChild(imgActive);
 	tile.appendChild(corner);
 	tile.appendChild(stripe);
-	tile.addEventListener("click", function() {
-			toggleContent(); 
-		});
 
+	var mainImage = document.createElement('img');
+	mainImage.setAttribute('src', this.imgActive);
+
+	innerBox.appendChild(mainImage);
+
+	// tile.addEventListener("click", function() {
+	// 	loadContent(); 
+	// });
+
+	tile.addEventListener("click", function() {
+		toggleContent(); 
+	});
 };
 
+
+// Tile.prototype.loadContent = function() {
+// 	var mainImage = document.createElement('img');
+// 	mainImage.setAttribute('src', this.imgActive);
+
+// 	innerBox.appendChild(mainImage);
+
+// 	tile.addEventListener("click", function() {
+// 		loadContent(); 
+// 	});
+
+// 	tile.addEventListener("click", function() {
+// 		toggleContent(); 
+// 	});
+// };
 
 
 
