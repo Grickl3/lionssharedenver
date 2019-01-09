@@ -13,3 +13,10 @@ function toggleSplash() {
 		splash.classList.add("splash-hidden");
 	}
 }
+
+
+function toggleContent(e) {
+	// console.log("content toggler reached");
+	contentBox.classList.toggle("content__hidden");
+}
+

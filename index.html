@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/_delivery.css">
 	<link rel="stylesheet" type="text/css" href="styles/_footer.css">
 	<link rel="stylesheet" type="text/css" href="styles/_cart.css">
+	<link rel="stylesheet" type="text/css" href="styles/_content.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700" rel="stylesheet">
@@ -59,14 +60,14 @@
 	</div><!-- SPLASH -->
 
 	<div id="delivery-modal" class="delivery__modal delivery__hidden">
-		<div id="delivery-close" class="delivery__close"> 
-			<div class="delivery__close__x-arm delivery__close__x-arm-up"></div>
-			<div class="delivery__close__x-arm delivery__close__x-arm-down"></div>
+		<div id="delivery-close" class="ui__close">
+			<div class="ui__close__x-arm ui__close__x-arm-up"></div>
+			<div class="ui__close__x-arm ui__close__x-arm-down"></div> 
 		</div><!-- CLOSE X -->
 		<h1 class="delivery__heading delivery__copy">Delivery</h1>
 		<p class="delivery__explanation delivery__copy">Lion's Share will happily have the contents of<br>your shopping cart delivered to you today.</p> 
 
-		<div class="cart__box">
+		<div class="cart__box"> 
 
 		</div><!-- CART BOX -->
 		
@@ -135,6 +136,15 @@
 
 	</div><!-- TILES -->
 
+	<div id="content-box" class="content__box">  <!-- content__hidden -->
+		<div class="content__inner-box">
+			<div id="content-close" class="ui__close-cnt ">  
+				<div class="ui__close__x-arm-cnt ui__close__x-arm-up"></div>
+				<div class="ui__close__x-arm-cnt ui__close__x-arm-down"></div> 
+			</div><!-- CLOSE X -->
+		</div><!-- INNER BOX -->   
+	</div><!-- CONTENT -->
+
 	<footer class="footer">
 		
 	</footer>
@@ -144,14 +154,13 @@
 		var yOffset = 0;
 
 		// ================= SPLASH ========================
-
-			var deliveryModal = document.getElementById("delivery-modal");
-			var deliveryOpen = document.getElementById("delivery-open");
-			var deliveryClose = document.getElementById("delivery-close");
-
 			window.addEventListener("scroll", function() {
 				toggleSplash();
 			})
+		// ================= DELIVERY =====================
+			var deliveryModal = document.getElementById("delivery-modal");
+			var deliveryOpen = document.getElementById("delivery-open");
+			var deliveryClose = document.getElementById("delivery-close");
 
 			deliveryOpen.addEventListener("click", function() {
 				toggleModal();
@@ -159,12 +168,11 @@
 			deliveryClose.addEventListener("click", function() {
 				toggleModal(); 
 			});
-
 		// ================= TILES ========================
 
 			var tileBox = document.getElementById("tile-box");  
 
-			var savage21 = new Tile(600,"img/21savage_600.jpg","/img/21-savage_active.jpg","21 Savage","review",null,"../img/thumbsup.png","thumbs up",null,null,null,"21 Savage: New Release");
+			var savage21 = new Tile(600,"img/21savage_600.jpg","img/21-savage_active.jpg","21 Savage","review",null,"../img/thumbsup.png","thumbs up",null,null,null,"21 Savage: New Release");
 			savage21.layTile(); 
 
 			var meekMill = new Tile(750, "img/meek-mill_750.jpg", "img/meek-mill_active.jpg", "Meek Mill", "event", null, null, null, "JULY", "9", "6pm", "Meek Mill");
@@ -179,7 +187,17 @@
 			var mcPhoneHome = new Tile(323, "img/mc-phone-home_323.jpg", "img/mc-phone-home_active.jpg", "MC Phone Home", "event", null, null, null, "MAY", "15", "8pm", "MC Phone Home");
 			mcPhoneHome.layTile();
 
-		// ================= TILES ========================
+		// ================= CONTENT ========================
+			var contentBox = document.getElementById("content-box");
+			var contentClose = document.getElementById("content-close");
+
+			contentClose.addEventListener("click", function() {
+				toggleContent(); 
+			}); 
+		  
+			
+			
+
 	</script>
 
 </body>

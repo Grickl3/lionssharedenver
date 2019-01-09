@@ -1,0 +1,30 @@
+
+
+
+
+.content__box {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	padding-top: 5rem;
+
+	background-color: white;
+}
+
+.content__inner-box {
+	display: flex;
+	margin: 75px;
+	min-width: 60%;
+	min-height: 70%;
+
+	/*border: 5px solid blue;*/
+}
+
+.content__hidden {
+	display: none;
+}
+
+#content-close {
+	/*border: 1px solid red;*/
+}

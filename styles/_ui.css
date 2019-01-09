@@ -1,0 +1,61 @@
+
+
+
+
+.ui__close__x-arm {
+	margin: 12px 18px;
+	position: absolute;
+	right: 0px;
+
+	height: 20px;
+	width: 4px;
+	background-color: darkgrey;
+}
+
+.ui__close:hover .ui__close__x-arm {
+	background-color: black;
+}
+
+
+.ui__close__x-arm-up {
+	transform: rotate(45deg);
+}
+.ui__close__x-arm-down {
+	transform: rotate(-45deg);
+}
+
+#delivery-close {
+	/*border: 1px solid red;*/
+}
+ 
+/* ================= CONTENT ============ */
+
+	.ui__close__x-arm-cnt {
+		margin: 12px 100px;
+		position: absolute;
+		right: 0px;
+
+		height: 20px;
+		width: 4px;
+		background-color: darkgrey;
+	}
+
+	.ui__close-cnt:hover .ui__close__x-arm-cnt {
+		background-color: black;
+	}
+
+
+	.ui__close__x-arm-up {
+		transform: rotate(45deg);
+	}
+	.ui__close__x-arm-down {
+		transform: rotate(-45deg);
+	}
+
+
+
+
+
+
+
+

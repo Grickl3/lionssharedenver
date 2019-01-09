@@ -78,6 +78,9 @@ Tile.prototype.layTile = function() {
 	tile.appendChild(imgActive);
 	tile.appendChild(corner);
 	tile.appendChild(stripe);
+	tile.addEventListener("click", function() {
+			toggleContent(); 
+		});
 
 };
 

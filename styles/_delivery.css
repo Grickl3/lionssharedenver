@@ -1,4 +1,4 @@
-
+ 
 
 .delivery__modal {
 	position: fixed;
@@ -15,28 +15,6 @@
 
 .delivery__hidden {
 	display: none;
-}
-
-.delivery__close__x-arm {
-	margin: 12px 18px;
-	position: absolute;
-	right: 0px;
-
-	height: 20px;
-	width: 4px;
-	background-color: darkgrey;
-}
-
-.delivery__close:hover .delivery__close__x-arm {
-	background-color: black;
-}
-
-
-.delivery__close__x-arm-up {
-	transform: rotate(45deg);
-}
-.delivery__close__x-arm-down {
-	transform: rotate(-45deg);
 }
 
 .delivery__copy {
