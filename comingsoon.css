@@ -1,18 +1,19 @@
-
+ 
 
 * {
-	font-family: 'Cinzel', serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 	text-align: center;
 }
 
 body {
 	overflow: hidden;
 
-	background-image: url("repose.jpg");
+	background-image: url("den-co.jpg");
 	min-height: 100vh;
+	bottom: 0;
 	/*background-size: cover;*/
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center bottom;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -24,7 +25,7 @@ body {
 h1 {
 	/*position: fixed;*/
 	z-index: 2;
-	margin-top: 10rem;
+	/*margin-top: 4rem;*/
 
 	color: #2a1f49;
 	font-size: 4rem;
@@ -34,9 +35,9 @@ h1 {
 @media (min-width: 900px) {
 
 	h1 {
-		margin-top: 20rem;
+		margin-top: 8rem;
 
-		font-size: 6rem;
+		font-size: 2.5rem;
 	}
 
 }
@@ -53,3 +54,49 @@ h5 {
 	margin: -15px;
 	height: 100%;
 }
+
+.brand-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 12rem 0 6rem 0;
+
+	/*border: 1px solid white;*/
+}
+
+.mark {
+	height: 175px;
+}
+
+.announcement {
+	font-weight: 700;
+}
+
+.brand {
+	margin: 0 5rem;
+	font-weight: 100;
+	font-size: 5rem;
+	color: white;
+}
+
+.hours {
+	color: #2a1f49;
+}
+
+.days {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.times {
+	font-size: 3rem;
+	font-weight: 200;
+}
+
+
+
+
+
+
+
