@@ -56,17 +56,28 @@ h5 {
 }
 
 .brand-box {
+	position: fixed;
+	top: 25%;
+	width: 100%;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 12rem 0 6rem 0;
+	/*margin: 12rem 0 6rem 0;*/
 
-	/*border: 1px solid white;*/
+	border: 1px solid white;
 }
 
 .mark {
-	height: 175px;
+	transform: translateX(-50%);
+	animation: size-mark 1s ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes size-mark {
+	from {height: 300px;}
+	to {height: 175px;}
 }
 
 .announcement {
@@ -74,10 +85,64 @@ h5 {
 }
 
 .brand {
-	margin: 0 5rem;
+	position: fixed;
+	bottom: 60%;
+	/*margin: 0 5rem;*/
 	font-weight: 100;
 	font-size: 5rem;
 	color: white;
+}
+
+.lion {
+	transform: translateY(-35%);
+	animation: position-lion 1s ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes position-lion {
+	0% {left: 0;}
+	100% {left: 15%;}
+}
+
+.share {
+	transform: translateY(-35%);
+	animation: position-share 1s ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes position-share {
+	0% {right: 0;}
+	100% {right: 15%;}
+}
+
+
+.hours-box {
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	/*transform: translateX(-50%);*/
+	/*transform: translateY(50%);*/
+	width: 40%;
+	/*height: 0;*/
+	animation: raise-hours 1s ease-out;
+	animation-fill-mode: forwards;
+
+	padding: 36px 0 150px 0; 
+	border-top-left-radius: 11px; 
+	border-top-right-radius: 11px;
+	/*border: 1px solid red;*/
+
+	/* GRADIENT */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+82,0+100 */
+		background: -moz-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 82%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 82%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 82%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+@keyframes raise-hours {
+	0% {height: 0%;}
+	100% {height: 20%;}
 }
 
 .hours {
@@ -85,15 +150,28 @@ h5 {
 }
 
 .days {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 700;
 }
 
 .times {
-	font-size: 3rem;
+	font-size: 2.25rem;
 	font-weight: 200;
 }
 
+.address {
+	font-size: 1.6rem;
+	font-weight: 200;
+}
+
+.store {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.fifty {
+	height: 50px;
+}
 
 
 
