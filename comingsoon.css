@@ -48,6 +48,11 @@ h5 {
 	letter-spacing: .7rem;
 }
 
+a {
+	color: #2a1f49;
+	text-decoration: none;
+}
+
 .background-image {
 	/*position: fixed;*/
 	z-index: 1;
