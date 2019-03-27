@@ -127,7 +127,7 @@ h5 {
 	animation: raise-hours 1s ease-out;
 	animation-fill-mode: forwards;
 
-	padding: 36px 0 150px 0; 
+	padding: 16px 0 150px 0; 
 	border-top-left-radius: 11px; 
 	border-top-right-radius: 11px;
 	/*border: 1px solid red;*/
@@ -142,7 +142,7 @@ h5 {
 
 @keyframes raise-hours {
 	0% {height: 0%;}
-	100% {height: 20%;}
+	100% {height: 25%;}
 }
 
 .hours {
@@ -170,7 +170,7 @@ h5 {
 }
 
 .fifty {
-	height: 50px;
+	height: 30px;
 }
 
 
